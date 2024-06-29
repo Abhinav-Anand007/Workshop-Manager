@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {FaLocationDot} from "react-icons/fa6"
+
+import Navbar from './components/Navbar';
+import PresenterList from './components/PresenterList';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <p className="page-path"> <FaLocationDot /> IIIT Kottayam - Workshops / Admin / Presenter Validation</p>
+      <PresenterList />
+      <Footer />
     </div>
   );
 }
